@@ -1,5 +1,235 @@
-#video {
-    position: fixed;
+html body{
+  margin: 0;
+  padding: 0;
+  background: #EDEFED;
+}
+            /*vido*/
+video{
+  position: absolute;
+  width: 100%;
+  z-index: -1000;
+
+
+}
+          /*header container*/
+
+.header-container{
+  width: 100%;
+  height: 900px;
+  border-left: 0;
+  border-right: 0;
+  position: relative;
+  /*padding: 20px;*/
+}
+
+              /*video container*/
+
+.video-conatiner{
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+        /*headline*/
+
+.headlines{
+  z-index: 2;
+  position: absolute;
+  color: white;
+  top: 18%;
+  left: 20%;
+
+}
+
+        /*first headline*/
+.first{
+  text-align: center;
+  font-family: circular, "helvetica neue", helvetica, arial, sans-serif;
+  font-size: 60px;
+  font-weight: bold;
+}
+
+               /*second headline*/
+
+.second{
+  font-family: circular, "helvetica neue", helvetica, arial, sans-serif;
+  text-align: center;
+  font-size: 18px;
+}
+
+      /*navigation bar*/
+
+nav ul{
+  display: flex;
+  color: white;
+  list-style: none;
+  padding-top: 1%;
+}
+
+nav ul a{
+  text-decoration: none;
+  margin-right: 3%;
+  font-size: 14px;
+  color: white;
+}
+
+      /*logo*/
+
+.logo{
+  width: 5%;
+  height: 5%%;
+  flex-grow: 1;
+}
+
+.devenez{
+  border: 2px solid white;
+  padding: 0 1%;
+  text-align: center;
+
+}
+
+
+
+        /*span next to the logo*/
+span{
+  z-index: 1;
+  font-size: 24px;
+  font-family: circular;
+  font-weight: bold;
+
+}
+
+
+         /*section*/
+section{
+
+  margin-top: 35%;
+  margin-left: -3%;
+
+}
+.input-group{
+  margin-right: -2%;
+}
+
+        /*image after te input*/
+.img-text{
+  display: flex;
+  margin-top: -7%;
+  width: 100%;
+  padding-left: 10%;
+
+
+
+}
+
+.card-img{
+  flex: 2;
+  height: 300px;
+}
+
+.text{
+    background-color: white;
+    margin-right: 15%;
+    margin-left:-1%;
+}
+  /*title inside the text*/
+h3{
+  padding: 10%;
+  font-size: 26px;
+  font-weight: bold;
+  font-family: circular, "helvetica neue", helvetica, arial, sans-serif;
+
+}
+
+  /*paraghraph inside the text box*/
+.paragraph{
+  font-size: 18px;
+  padding: 2% 10%;
+}
+
+.second_headline{
+  display: flex;
+  flex-direction: column;
+}
+.second_h {
+  font-size: 32px;
+  font-family: circular, "helvetica neue", helvetica, arial, sans-serif;
+  font-weight: bold;
+}
+
+.second_p {
+  font-size: 16px;
+
+}
+
+
+.cities{
+  display:flex;
+  height: 300px;
+  flex-wrap: wrap;
+
+
+}
+
+.col{
+  flex: 1;
+  margin-right:2%;
+}
+
+
+.sanfran{
+  background-image: url("sanfran.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  margin-left: 10%;
+}
+
+.newyork{
+  background-image:url("newyork.jpg");
+  text-align: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.london{
+  background-image:url("london.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  margin-right: 10%
+}
+
+#estimer-xs{
+  background-color: #007a87;
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+    /*footer*/
+
+.row{
+  background: #2B2D2E;
+  color: white;
+  margin-top: 2%;
+}
+.col{
+  margin-top: 1%;
+}
+
+.para {
+font-style: normal;
+
+
+}
+
+
+
+#bgvid {
     right: 0;
     bottom: 0;
     min-width: 100%;
@@ -7,39 +237,6 @@
     width: auto;
     height: auto;
     z-index: -100;
-    background-color: #fff;
+    background-color:orange;
     background-size: cover;
-}
-.navbar {
-    display: flex;
-    border-width: 20px;
-    float: right;
-}
-a {
-    color: white;
-    text-align: center;
-    padding: 0 19px;
-    height: 75px;
-    line-height: 75px;
-    background-color: transparent;
-}
-a:hover {
-    text-decoration: none;
-    color: white;
-}
-h1 {
-    color: white;
-}
-
-
-
-/* jummbtron */
-.jumbotron
-{
-    background-color:transparent;
-    color:white;
-    text-align:center;
-    font-family:'nevis';
-    font-weight:700;
-    font-size:14px;
 }

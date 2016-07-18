@@ -1,39 +1,123 @@
 <!DOCTYPE html>
-
 <html>
 
-<head>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css" />
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
-<!-- En-tête de la page -->
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css"
+    integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd"
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="logo.ico" type="image/x-icon">
+    <title>Locations saisionnières</title>
+  </head>
+<!-- Header -->
+  <body>
+    <!-- background video-->
+    <video autoplay="" loop="" poster="img/logo.png" id="bgvid">
+      <source src="https://a0.muscache.com/airbnb/static/P1-background-vid-compressed-2.webm"
+      type="video/webm">
+        <source src="https://a0.muscache.com/airbnb/static/P1-background-vid-compressed-2.mp4"
+        type="video/mp4">
+    </video>
 
-
-<body>
-    <!--Naviguation  -->
-    <nav class="navbar nav">
-        <a href="" class="inscription">Inscription</a>
-        <a href="" class="connexion">Connexion</a>
-        <a href="" class="connexion">Aide</a>
-
-        </nav>
-        <!-- Video de fond -->
-        <video autoplay loop poster="img/logo.png" id="video">
-            <source src="https://a0.muscache.com/airbnb/static/P1-background-vid-compressed-2.webm" type="video/webm">
-            <source src="https://a0.muscache.com/airbnb/static/P1-background-vid-compressed-2.mp4" type="video/mp4">
-        </video>
-        <!-- Sous titre plus paragraphe -->
-        <div class="jumbotron jumbotron-fluid m-t-3">
-            <div class="container p-t-2">
-                <h1 class="display-3">VIVEZ LA-BAS</h1>
-                <p class="lead">Réservez des logements auprès d'hôtes locaux dans plus de 191 pays et vivez là-bas, comme chez vous.</p>
+      <!-- Barre de navigation -->
+            <nav>
+              <ul>
+                <div class="logo">
+                  <span>airbnb</span>
+          </div>
+          <a class="nav-link active devenez" href="#">Devenez hote</a>
+          <a class="nav-link" href="#">Aide</a>
+          <a class="nav-link" href="#">Inscription</a>
+          <a class="nav-link active" href="#">Connexion</a>
+        </ul>
+      </nav>
+      <!-- TITRE + PARAGRAPHE MILIEU DE PAGE -->
+      <div class="headlines">
+        <p class="first">VIVEZ-LÀ BAS</p>
+        <p class="second">Réservez des logements auprès d'hôtes locaux dans plus de 191 pays et
+          vivez là-bas, comme chez vous.</p>
+      </div>
+      <!-- Boutton recherche (inpu) -->
+      <section class="section ">
+        <div class="row col-md-offset-2 ">
+          <div class="col-xs-4 input-group ">
+            <input type="text" class="form-control" placeholder="où">
+          </div>
+          <div class="col-xs-3 input-group ">
+            <input type="text" class="form-control" placeholder="">
+          </div>
+          <div class="col-lg-3 input-group ">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="">
+              <span class="input-group-btn">
+                <button class="btn btn-secondary btn-danger" type="button">Recherger</button>
+              </span>
             </div>
+          </div>
+        </div>
+      </section>
+    </div>
+<!-- photo du loup texte+paragraphe -->
+    <div class="img-text">
+      <img class="card-img col-md-6" src="https://ununsplash.imgix.net/photo-1421098518790-5a14be02b243?w=1024&amp;q=50&amp;fm=jpg&amp;s=24665881d66f79925810c2deb7e486b9"
+      alt="Card image cap">
+      <div class="text col-md-3">
+        <h3>Ouvrez la porte à un voyageur et à une nouvelle vie</h3>
+        <p class="paragraph">Gagnez de l'argent en accueillant des voyageurs.</p>
+        <button id="estimer-xs"
+        type="submit" class="btn btn-host col-xs-10 col-xs-offset-1">Estimer mes revenus</button>
+      </div>
+    </div>
 
-</body>
+    <div class="second_headline p-t-3 p-b-2">
+      <h1 class="text-xs-center second_h">Nouveau ! Les Guides</h1>
+      <p class="text-xs-center second_p">Découvrez des centaines de bonnes adresses recommandées par les hôtes
+        Airbnb</p>
+    </div>
+    <!-- pgoto -->
+    <div class="cities ">
+      <div class="col sanfran">San Francisco</div>
+      <div class="col newyork">NewYork</div>
+      <div class="col london">London</div>
+    </div>
+    <h1 class="text-xs-center second_h">Explorez le monde</h1>c
+    <center></center>
+    <p class="text-xs-center second_p">Découvrez des centaines de bonnes adresses recommandées par les hôtes
+      Airbnb</p>
 
-<!--  -->
 
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js"
+    integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7"
+    crossorigin="anonymous"></script>
+    <footer class="row">
+      <div class="col col-md-offset-1 hide-sm text-right">
+        <center>
+          <h5>Société</h5>
+        </center>
+        <center>
+          <ul class="list-unstyled" contenteditable="true">
+            <li>A propos</li>
+            <li>Carriere</li>
+            <li>Presse</li>
+            <li>Blog</li>
+            <li>Aide</li>
+            <li>Régles</li>
+            <li>Réponse</li>
+            <li>Condition Generales</li>
+          </ul>
+        </center>
+
+
+
+      </div>
+
+
+   </footer>
+  </body>
 
 </html>
